@@ -33,21 +33,21 @@ body {
 
 .sec1 {
   width: 100%;
-  height: 489px;
+  height: 382px;
   margin: 0 auto;
 }
 
 .sec1 .container {
   width: 62.2222222222%;
   height: 297px;
-  margin-top: 74px;
+  margin-top: 31px;
 }
 
 .sec2 {
   width: 100%;
   height: 591px;
   margin: 0 auto;
-  background: url('../images/gold.png') rgb(235, 235, 235);
+  background: url('../images/gold.png') #f7f7f7;
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center bottom;
@@ -111,9 +111,9 @@ body {
 }
 
 .container-1 {
-  width: 80.1144492131%;
-  height: 287px;
-  margin-top: 64px;
+  width: 80.0889877641%;
+  height: 272px;
+  margin-top: 50px;
 }
 
 .image-1 {
@@ -123,7 +123,7 @@ body {
 
 .image-2 {
   width: 248px;
-  margin: 3px auto 0;
+  margin: 0 auto;
 }
 
 .what-2 {
@@ -137,12 +137,18 @@ body {
 
 ._container-1 {
   width: 100%;
-  height: 449px;
+  height: 389px;
   margin: 0 auto;
-  border-width: 1px 1px 10px;
-  border-color: #808080 #808080 #dea600;
-  border-style: solid;
-  background-color: rgb(6, 34, 78);
+  border-bottom: 10px solid #dea600;
+  background: #094077; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #094077 0%, #06224e 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#094077), color-stop(100%,#06224e)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #094077 0%,#06224e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094077', endColorstr='#06224e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 ._container-5 {
@@ -161,13 +167,13 @@ body {
   font-size: 1em;
   font-weight: 300;
   text-align: center;
-  color: rgb(50, 124, 238);
+  color: rgb(0, 111, 191);
 }
 
 .container ._text-1 {
   width: 100.1446416831%;
   min-height: 52px;
-  margin: 55px auto 0;
+  margin: 40px auto 0;
   font-size: 1.625em;
   font-weight: 300;
   text-align: center;
@@ -233,7 +239,8 @@ body {
 
   .sec1 .container {
     width: 79.94289793%;
-    height: 394px;
+    height: 382px;
+    margin-top: 0;
   }
 
   .sec2 {
@@ -262,9 +269,43 @@ body {
   }
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1350px) {
   body {
     font-size: 1em;
+  }
+
+  .container .how {
+    position: relative;
+    z-index: 5;
+  }
+
+  .container .image {
+    height: auto;
+  }
+
+  .sec1 .container {
+    margin-top: 10px;
+  }
+
+  .sec2 .image {
+    position: relative;
+    z-index: 6;
+  }
+
+  .what ._text-2 {
+    width: 92.6660371419%;
+    font-size: 1.625em;
+  }
+
+  .what ._text-4,
+  .what ._text-6 {
+    font-size: 1.625em;
+  }
+}
+
+@media(max-width: 960px) {
+  body {
+    font-size: 0.875em;
   }
 
   .container .how {
@@ -282,6 +323,7 @@ body {
 
   .sec1 .container {
     width: 98.2291666666%;
+    margin-top: 0;
   }
 
   .sec2 .container {
@@ -294,8 +336,38 @@ body {
     margin-left: 6.49839%;
   }
 
+  .what .icon {
+    font-size: 3.929em;
+  }
+
   .how ._button {
     margin-top: 20px;
+    font-size: 1.143em;
+  }
+
+  .container ._text-1 {
+    font-size: 1.857em;
+  }
+
+  .how ._text-8 {
+    font-size: 2em;
+  }
+
+  ._container ._text-10,
+  .how ._text-9 {
+    font-size: 1.143em;
+  }
+
+  .what ._text-2,
+  .what ._text-4,
+  .what ._text-6 {
+    font-size: 1.714em;
+  }
+
+  .what ._text-3,
+  .what ._text-5,
+  .what ._text-7 {
+    font-size: 14px;
   }
 }
 
@@ -315,7 +387,6 @@ body {
 
   .sec1 .container {
     width: 98.2432432432%;
-    margin-top: 50px;
   }
 
   .sec2 .image {
@@ -330,6 +401,10 @@ body {
     margin-top: 32px;
   }
 
+  .container .image-2 {
+    margin-top: 3px;
+  }
+
   .container .what-1 {
     margin-left: 0.06233%;
   }
@@ -342,20 +417,29 @@ body {
     margin-left: 0.82746%;
   }
 
+  ._container .container-1 {
+    width: 99.8644986449%;
+    margin-top: 64px;
+  }
+
+  .container ._text-1 {
+    margin-top: 55px;
+  }
+
   .how ._text-8 {
-    font-size: 1.375em;
+    font-size: 1.571em;
   }
 
   .what ._text-2,
   .what ._text-4,
   .what ._text-6 {
-    font-size: 1.25em;
+    font-size: 1.429em;
   }
 }
 
 @media(max-width: 536px) {
   body {
-    font-size: 1em;
+    font-size: 0.875em;
   }
 
   .container .how {
@@ -385,6 +469,7 @@ body {
   .sec1 .container {
     width: 99.8134328358%;
     height: 932px;
+    margin-top: 50px;
   }
 
   .sec2 {
@@ -416,8 +501,17 @@ body {
     text-align: center;
   }
 
+  .container .image-2 {
+    margin-top: 0;
+  }
+
   ._container ._text-10 {
     width: 100%;
+  }
+
+  ._container .container-1 {
+    width: 100.3745318352%;
+    margin-top: 30px;
   }
 
   ._container-5 {
@@ -427,6 +521,12 @@ body {
     margin-left: auto;
   }
 
+  .container ._text-1 {
+    width: 68.6567164179%;
+    margin-top: 25px;
+    font-size: 1.714em;
+  }
+
   .how ._text-9 {
     float: none;
     clear: none;
@@ -434,7 +534,7 @@ body {
     margin-top: 59px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 0.938em;
+    font-size: 1.071em;
   }
 
   .what ._text-3,
@@ -469,20 +569,23 @@ body {
 
   .container .image-2 {
     width: 225px;
+    margin-top: 3px;
   }
 
   ._container ._text-10 {
-    font-size: 0.813em;
+    font-size: 0.929em;
   }
 
   ._container .container-1 {
     width: 100.8695652173%;
     height: 316px;
+    margin-top: 64px;
   }
 
   .container ._text-1 {
     width: 88.2183908045%;
-    font-size: 1.25em;
+    margin-top: 55px;
+    font-size: 1.429em;
   }
 
   .how ._text-9 {
