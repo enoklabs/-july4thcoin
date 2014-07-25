@@ -139,10 +139,16 @@ body {
   width: 100%;
   height: 389px;
   margin: 0 auto;
-  border-width: 1px 1px 10px;
-  border-color: #808080 #808080 #dea600;
-  border-style: solid;
-  background-color: rgb(6, 34, 78);
+  border-bottom: 10px solid #dea600;
+  background: #094077; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #094077 0%, #06224e 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#094077), color-stop(100%,#06224e)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #094077 0%,#06224e 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #094077 0%,#06224e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094077', endColorstr='#06224e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 ._container-5 {
@@ -161,7 +167,7 @@ body {
   font-size: 1em;
   font-weight: 300;
   text-align: center;
-  color: rgb(50, 124, 238);
+  color: rgb(0, 111, 191);
 }
 
 .container ._text-1 {
